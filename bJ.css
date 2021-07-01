@@ -1,0 +1,49 @@
+body {
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 45px;
+    color: goldenrod;
+}
+
+#message-el {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#sum-el {
+    font-size: 25px;
+}
+
+#cards-el {
+    font-size: 25px;
+}
+button {
+    margin-top:3px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    border: none;
+    padding: 7px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+}
+
+#reset {
+    margin-top: 50px;
+}
+#cash-el {
+    font-size: 25px;
+}
+
+#betAmt {
+    font-size: 25px;
+}
