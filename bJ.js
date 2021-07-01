@@ -10,21 +10,9 @@ let message = ""
 let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
-let cashEl = document.querySelector("#cash-el");
-let betAmt = document.querySelector("#betAmt")
-let betBtn = document.querySelector("#bet-el");
-let click = false;
-/*betBtn.addEventListener("click", () => {
-    click = true;
-    console.log(click)
-    return click
-}); */
 
 
 
-let gameStarted = false;
-console.log(cashEl)
-cashEl.textContent = "You have $" + cash 
 
 
 
@@ -87,19 +75,3 @@ function reset() {
     location.reload()
 }
 
-function bet() {
-    cash = 0
-    betCash = 500
-    cashEl.textContent = "You have $" + cash 
-    betAmt.textContent = "You have bet $" + betCash
-    if (sum === 21) {
-        cash = betCash * 2
-        cashEl.textContent = "You have won $" + cash 
-        console.log(cash)
-    } else if (sum > 21) {
-        cash = 0
-        cashEl.textContent = "You have $" + cash 
-        betAmt.textContent = "You have lost $" + betCash
-        console.log(cash)
-    }
-}
