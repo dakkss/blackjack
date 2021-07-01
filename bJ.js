@@ -10,11 +10,6 @@ let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 
-
-
-
-
-
 function getRandomCard() {
     let ranNum = Math.floor(Math.random() * 12);
     if (ranNum === 0) {
@@ -43,7 +38,7 @@ function renderGame() {
     } else if (sum === 21) {
         message = ("BlackJack! You win!");
         hasBlackJack = true;
-        setTimeout(() => { reset();}, 2000);
+        setTimeout(() => { reset();}, 1500);
         isAlive = false
         if(isAlive === false) {
             document.getElementById("newCard").style.visibility = "hidden";
@@ -54,7 +49,7 @@ function renderGame() {
         if(isAlive === false) {
             document.getElementById("newCard").style.visibility = "hidden";
         }
-        setTimeout(() => { reset();}, 2000);
+        setTimeout(() => { reset();}, 1500);
     }
     messageEl.textContent = message
 
@@ -73,4 +68,3 @@ function newCard() {
 function reset() {
     location.reload()
 }
-
