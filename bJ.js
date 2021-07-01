@@ -1,5 +1,4 @@
-let cash = 500
-let betCash = 0
+
 let firstCard = getRandomCard();
 let secondCard = getRandomCard();
 let cards = [firstCard, secondCard]
